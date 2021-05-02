@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jay's Portfolio</title>
+    <meta name="description" content="Portfolio for browser developer Jay" />
+    <meta name="author" content="Jaeyong Bae" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/c4d8e9c177.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Jay</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#work">Work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <img
+        src="imgs/profile.jpg"
+        alt="Jay's profile photo"
+        class="home__avatar"
+        width="200"
+        height="200"
+      />
+      <h1 class="home__title">
+        Hello <br />
+        My name is Jay
+      </h1>
+      <h2 class="home__description">Samsung Internet Developer</h2>
+      <h3 class="home__description">Browser developer / Security engineer</h3>
+      <button class="home__contact">Contact Me</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        One of my big interests is open source projects. <br />
+        Specifically, the chromium/blink open source project. <br />
+        I love to learn a thing and to collaborate with a team. <br />
+        And I value listening and would like to have a positive attitude to
+        accept it. <br />I also enjoy listening to music and brand enthusiasts.
+        <br />
+      </p>
+
+      <div class="about__majors" class="section section__container">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-chrome"></i>
+          </div>
+          <h2 class="major__title">Browser</h2>
+          <p class="major__description">
+            Implement chromium feature, blink engine and writing a web platform test.
+          </p>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">
+            Develop android platform application using java. Also handle native side with JNI.
+          </p>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Using docker, setting up infra and deploy the web site.
+          </p>
+        </div>
+      </div>
+
+      <div class="about__jobs">
+        <div class="job">
+          <img src="imgs/jobs/samsung.png" alt="samsung" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Browser Developer
+            </p>
+            <p class="job__period">2019 November - Unitl Now</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/samsung.png" alt="samsung" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">Worked at Samsung as Security Engineer</p>
+            <p class="job__period">2017 March - Unitl 2019 November</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/jennifer.jpg" alt="jennifer" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">
+              Worked at JenniferSoft as Software Engineer Intern
+            </p>
+            <p class="job__period">2016 July - Unitl 2016 August</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/lotte.jpg" alt="lotte" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">Worked at Lotte as Software Engineer Intern</p>
+            <p class="job__period">2016 January - Unitl 2016 Febuary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__projects">
+        <a
+          target="blank"
+          class="project"
+          href="https://chromium-review.googlesource.com/q/owner:jdragon.bae%2540gmail.com"
+        >
+          <img
+            src="imgs/projects/chromium.png"
+            alt="Chromium"
+            class="project__image"
+          />
+          <div class="project__description">
+            <h3>Chromium</h3>
+            <span> Chromium is an open-source browser project. </span>
+          </div>
+        </a>
+
+        <a
+          target="blank"
+          class="project"
+          href="https://www.samsung.com/us/support/owners/app/samsung-internet"
+        >
+          <img
+            src="imgs/projects/samsung_internet.png"
+            alt="Samsung Internet"
+            class="project__image"
+          />
+          <div class="project__description">
+            <h3>Samsung Internet</h3>
+            <span>
+              Samsung Internet for Android is a Simple, Fast, and Reliable web
+              browser.
+            </span>
+          </div>
+        </a>
+        <a target="blank" class="project" href="https://wavy.kr">
+          <img src="imgs/projects/wavy.png" alt="Wavy" class="project__image" />
+          <div class="project__description">
+            <h3>Wavy</h3>
+            <span> The website for the wavy company. </span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">jdragon.bae@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/jdragonbae" target="blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jaeyong-bae-18320b19b"
+          target="blank"
+        >
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2020 Jay Portfolio - All rights reserved
+      </p>
+    </section>
+  </body>
+</html>
