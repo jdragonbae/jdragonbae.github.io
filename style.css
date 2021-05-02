@@ -325,6 +325,10 @@ h3 {
     align-items: flex-start;
   }
 
+  .major__description {
+    max-width: 100%;
+  }
+
   .navbar__menu {
     flex-direction: column;
     background-color: var(--color-grey);
