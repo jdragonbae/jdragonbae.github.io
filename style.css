@@ -230,6 +230,7 @@ h3 {
 
 .job__logo {
   min-width: 90px;
+  max-width: 90px;
 }
 
 /* Work */
